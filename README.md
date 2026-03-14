@@ -1,45 +1,45 @@
-# ðŸ” PassGen â€” Secure Password Generator
+# 🔐 PassGen — Secure Password Generator
 
 ---
 
-## âœ¨ Features
+## ✨ Features
 
-- âš¡ **Instant Password Generation** â€” generates a secure password on load and on every click
-- ðŸŽ² **Scramble Animation** â€” cinematic character-reveal animation for each new password
-- ðŸ”¢ **Adjustable Length** â€” slider from **6 to 64** characters
-- ðŸ”  **Character Set Options** â€” toggle Uppercase, Lowercase, Numbers, and Symbols independently
-- ðŸ›¡ï¸ **Strength Meter** â€” real-time visual strength indicator (Weak â†’ Fair â†’ Strong â†’ Very Strong)
-- ðŸ“‹ **One-Click Copy** â€” copies to clipboard with an animated confirmation icon and toast notification
-- ðŸ”’ **Guaranteed Complexity** â€” always includes at least one character from each selected group (Fisher-Yates shuffled)
-- ðŸš« **No Minimum Lock-out** â€” prevents unchecking the last remaining character type
-- ðŸ“± **Responsive Design** â€” works beautifully on all screen sizes
+- ⚡ **Instant Password Generation** — generates a secure password on load and on every click
+- 🎲 **Scramble Animation** — cinematic character-reveal animation for each new password
+- 🔢 **Adjustable Length** — slider from **6 to 64** characters
+- 🔠 **Character Set Options** — toggle Uppercase, Lowercase, Numbers, and Symbols independently
+- 🛡️ **Strength Meter** — real-time visual strength indicator (Weak → Fair → Strong → Very Strong)
+- 📋 **One-Click Copy** — copies to clipboard with an animated confirmation icon and toast notification
+- 🔒 **Guaranteed Complexity** — always includes at least one character from each selected group (Fisher-Yates shuffled)
+- 🚫 **No Minimum Lock-out** — prevents unchecking the last remaining character type
+- 📱 **Responsive Design** — works beautifully on all screen sizes
 
 ---
 
-## ðŸŽ¨ Design System
+## 🎨 Design System
 
 ### Color Palette
 
 | Variable | Hex | Preview | Usage |
 |---|---|---|---|
-| `--bg` | `#080c10` | ![bg](https://img.shields.io/badge/ã€€ã€€-080c10?style=flat-square) | Page background |
-| `--surface` | `#0d1117` | ![surface](https://img.shields.io/badge/ã€€ã€€-0d1117?style=flat-square) | Card / surface background |
-| `--border` | `#1a2333` | ![border](https://img.shields.io/badge/ã€€ã€€-1a2333?style=flat-square) | Borders, inactive elements |
-| `--accent` | `#00e5a0` | ![accent](https://img.shields.io/badge/ã€€ã€€-00e5a0?style=flat-square) | Primary accent â€” buttons, glow, password text |
-| `--accent2` | `#00b8d4` | ![accent2](https://img.shields.io/badge/ã€€ã€€-00b8d4?style=flat-square) | Secondary accent â€” "Strong" strength level |
-| `--danger` | `#ff4d6d` | ![danger](https://img.shields.io/badge/ã€€ã€€-ff4d6d?style=flat-square) | Weak password indicator |
-| `--warn` | `#ffbe0b` | ![warn](https://img.shields.io/badge/ã€€ã€€-ffbe0b?style=flat-square) | Fair password indicator |
-| `--text` | `#c9d1d9` | ![text](https://img.shields.io/badge/ã€€ã€€-c9d1d9?style=flat-square) | Primary body text |
-| `--muted` | `#4a5568` | ![muted](https://img.shields.io/badge/ã€€ã€€-4a5568?style=flat-square) | Labels, placeholders, inactive icons |
+| `--bg` | `#080c10` | ![bg](https://img.shields.io/badge/　　-080c10?style=flat-square) | Page background |
+| `--surface` | `#0d1117` | ![surface](https://img.shields.io/badge/　　-0d1117?style=flat-square) | Card / surface background |
+| `--border` | `#1a2333` | ![border](https://img.shields.io/badge/　　-1a2333?style=flat-square) | Borders, inactive elements |
+| `--accent` | `#00e5a0` | ![accent](https://img.shields.io/badge/　　-00e5a0?style=flat-square) | Primary accent — buttons, glow, password text |
+| `--accent2` | `#00b8d4` | ![accent2](https://img.shields.io/badge/　　-00b8d4?style=flat-square) | Secondary accent — "Strong" strength level |
+| `--danger` | `#ff4d6d` | ![danger](https://img.shields.io/badge/　　-ff4d6d?style=flat-square) | Weak password indicator |
+| `--warn` | `#ffbe0b` | ![warn](https://img.shields.io/badge/　　-ffbe0b?style=flat-square) | Fair password indicator |
+| `--text` | `#c9d1d9` | ![text](https://img.shields.io/badge/　　-c9d1d9?style=flat-square) | Primary body text |
+| `--muted` | `#4a5568` | ![muted](https://img.shields.io/badge/　　-4a5568?style=flat-square) | Labels, placeholders, inactive icons |
 
 ### Strength Meter Colors
 
 | Level | Color | Hex | Condition |
 |---|---|---|---|
-| ðŸ”´ Weak | Danger Red | `#ff4d6d` | Score 1 |
-| ðŸŸ¡ Fair | Warning Amber | `#ffbe0b` | Score 2 |
-| ðŸ”µ Strong | Cyan Accent | `#00b8d4` | Score 3 |
-| ðŸŸ¢ Very Strong | Green Accent | `#00e5a0` | Score 4 |
+| 🔴 Weak | Danger Red | `#ff4d6d` | Score 1 |
+| 🟡 Fair | Warning Amber | `#ffbe0b` | Score 2 |
+| 🔵 Strong | Cyan Accent | `#00b8d4` | Score 3 |
+| 🟢 Very Strong | Green Accent | `#00e5a0` | Score 4 |
 
 ### Typography
 
@@ -50,25 +50,25 @@
 
 ---
 
-## ðŸ“ Project Structure
+## 📁 Project Structure
 
 ```
 PasswordGenerator/
-â”œâ”€â”€ password-generator.html   # Main HTML structure
-â”œâ”€â”€ style.css                 # All styles, animations, and CSS variables
-â””â”€â”€ script.js                 # Password logic, animations, clipboard API
+├── password-generator.html   # Main HTML structure
+├── style.css                 # All styles, animations, and CSS variables
+└── script.js                 # Password logic, animations, clipboard API
 ```
 
 ---
 
-## ðŸ”§ How It Works
+## 🔧 How It Works
 
 ### Password Generation Algorithm
 
 1. **Collect active character sets** from the selected options (Uppercase / Lowercase / Numbers / Symbols)
-2. **Guarantee inclusion** â€” picks at least one character from each active group
-3. **Fill remaining length** â€” randomly samples from the combined charset
-4. **Fisher-Yates Shuffle** â€” shuffles the entire array to eliminate predictable patterns
+2. **Guarantee inclusion** — picks at least one character from each active group
+3. **Fill remaining length** — randomly samples from the combined charset
+4. **Fisher-Yates Shuffle** — shuffles the entire array to eliminate predictable patterns
 
 ```js
 // Fisher-Yates shuffle
@@ -101,11 +101,11 @@ Each generated password triggers a frame-by-frame reveal:
 
 ---
 
-## ðŸš€ Getting Started
+## 🚀 Getting Started
 
 ### Option 1: Open Directly
 
-Download and open `password-generator.html` in any modern browser â€” no setup required.
+Download and open `password-generator.html` in any modern browser — no setup required.
 
 ### Option 2: Clone and Run
 
@@ -123,12 +123,12 @@ open password-generator.html
 
 ---
 
-## ðŸŽ›ï¸ Usage Guide
+## 🎛️ Usage Guide
 
 | Action | How |
 |---|---|
 | Generate a password | Click the **Generate** button |
-| Change length | Drag the **length slider** (6â€“64 chars) |
+| Change length | Drag the **length slider** (6–64 chars) |
 | Toggle character types | Click any of the **4 option tiles** |
 | Copy password | Click the **copy icon** on the right of the password box |
 
@@ -136,25 +136,25 @@ open password-generator.html
 
 ---
 
-## ðŸŒ Browser Support
+## 🌐 Browser Support
 
 | Browser | Support |
 |---|---|
-| Chrome 90+ | âœ… Full |
-| Firefox 88+ | âœ… Full |
-| Safari 14+ | âœ… Full |
-| Edge 90+ | âœ… Full |
-| Opera 76+ | âœ… Full |
+| Chrome 90+ | ✅ Full |
+| Firefox 88+ | ✅ Full |
+| Safari 14+ | ✅ Full |
+| Edge 90+ | ✅ Full |
+| Opera 76+ | ✅ Full |
 
-> Uses `navigator.clipboard.writeText()` â€” requires HTTPS or `localhost` for clipboard access in Chrome.
+> Uses `navigator.clipboard.writeText()` — requires HTTPS or `localhost` for clipboard access in Chrome.
 
 ---
 
-## ðŸ” Security Notes
+## 🔐 Security Notes
 
-- âœ… All generation is done **client-side** â€” no passwords are ever sent to a server
-- âœ… Uses `Math.random()` for generation â€” suitable for everyday password use
-- âš ï¸ For cryptographic-grade generation, consider upgrading to `crypto.getRandomValues()`
+- ✅ All generation is done **client-side** — no passwords are ever sent to a server
+- ✅ Uses `Math.random()` for generation — suitable for everyday password use
+- ⚠️ For cryptographic-grade generation, consider upgrading to `crypto.getRandomValues()`
 
 ### Optional: Upgrade to Crypto API
 
@@ -167,7 +167,7 @@ const index = array[0] % charset.length;
 
 ---
 
-## ðŸŽ¨ Customization
+## 🎨 Customization
 
 ### Change the Accent Color
 
@@ -205,7 +205,7 @@ const CHARS = {
 
 ---
 
-## ðŸ¤ Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -217,13 +217,13 @@ Contributions are welcome!
 
 ---
 
-## ðŸ“„ License
+## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## ðŸ‘¤ Author
+## 👤 Author
 
 **jagarabari2-hub**
 
@@ -231,5 +231,5 @@ GitHub: [@jagarabari2-hub](https://github.com/jagarabari2-hub)
 
 ---
 
-<p align="center">Made with ðŸ’š and vanilla JavaScript</p>
-<p align="center">â­ Star this repo if you found it useful!</p>
+<p align="center">Made with 💚 and vanilla JavaScript</p>
+<p align="center">⭐ Star this repo if you found it useful!</p>
