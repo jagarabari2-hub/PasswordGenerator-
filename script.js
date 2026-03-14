@@ -166,7 +166,7 @@ function generate() {
 }
 
 function showToast(msg = 'Copied!') {
-    toast.textContent = msg;
+    toast.innerHTML = msg;
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'),
         1800);
@@ -175,7 +175,7 @@ function showToast(msg = 'Copied!') {
 function copyPassword() {
     if (!currentPassword) return;
     navigator.clipboard.writeText(currentPassword).then(() => {
-        showToast('✓ Copied to Clipboard');
+        showToast('<i class="fa-solid fa-check"></i> <span>Copied to Clipboard</span>');
         copyIcon.classList.add('copied');
         copySvg.innerHTML = CHECK_SVG;
         setTimeout(() => {
