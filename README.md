@@ -219,7 +219,7 @@ Contributions are welcome!
 
 ## 📄 License
 
-Distributed under the GPU 3.0 License. See `LICENSE` for more information.
+Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 ---
 
